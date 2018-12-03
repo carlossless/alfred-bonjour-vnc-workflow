@@ -1,0 +1,14 @@
+os: osx
+language: ruby
+rvm: system
+
+script: make
+
+deploy:
+  provider: releases
+  api_key:
+    secure: XoI4ofDXm0UZK4iwGKuYWnBXfdm6MA40CtfpxkuDEqN4r/Uwjrb0DtEi/9PmCWASCdscmm4yrxWYH64rGYMq70wIxZt1ErtvyeUQpeylfkQkvpErUGQPHxnXtan8mLZUrMsQij+RWJs5knhcBiqQe1SK3JfI9M10EugLEP0T/hVMDzeDzJ5Pc+ATypQ5vV2iF20zD0Hohq+FGO1BZ6B4rl6rRIPsB1QV+s4PyGrM8Q1v91GqA5VKjS97J96K2FnIwiu5JZLuyFE5CFqKmB3xgHpwXGH+huMK1+HXH3FW4pQaw+8S7rUDo+Q7/85ww40iwgTLrVZXctSAkpmeZ1fjlcyxGqLkOncVkm/lkgt9mxzlaJDjnS3XN2Nm/e1HVhsJha4gM50PaUQgskJ4JHKgvlt8WuM4CPWROnZ4j8Psxcfk17Cdq25gBWlohyLlIXKyTPS/WfJYOWrXrVDu4pnJpfC3aYQWGJrcpfMJ/hfUszk1Y/FpVr0zcJXnGVK6q5v4KsL2Sdaadv+cPNEfijYfnvfk3cMAsRnNa+D1x+M0Yp9v3e2KORBn0xAt8bWw+dOQxisOI2d7e8Y5fLKIhZ9x/TCBaaYgh/4ikqQx7yQG5LNoTWfX+XgQl3HTf/0/tUVCt3dSFp56D/orGUgE4cM8COQGQSuroTlAuMc3bVRd1Ak=
+  file: dist/bonjour-vnc.alfredworkflow
+  skip_cleanup: true
+  on:
+    tags: true
