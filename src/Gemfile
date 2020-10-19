@@ -7,3 +7,4 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # gem "rails"
 
 gem "dnssd", "~> 3.0"
+gem "fuzzy_match", "~> 2.1"
